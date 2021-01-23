@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Apple Gadgets</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="Content">
+        <div class="navbar">
+        <div class="logo">
+            <img src="images/apple.png" width="100px">
+            <p>Apple Gadgets</p>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Account</a></li>
+            </ul>
+        </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    
+    <div class="small-content  single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/M1.jpeg" width="50%" id="ProductImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/M2.jpeg" width="50%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/M3.jpeg" width="50%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/M4.jpeg" width="50%" class="small-img">
+                    </div>
+                </div>
+             </div>
+            <div class="col-2">
+                <p>Home / Mobile</p>
+                <h1>White iphone SE</h1>
+                <h4>$506.58</h4>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>5.8'', 1125*2436pixels, 12MP, 4GBRAM, 2658mAh</p>
+            </div>
+        </div>
+    </div>
+    <div class="small-content">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+    
+    
+    
+    <div class="small-content">
+        
+        <div class="row">
+            <div class="col-4">
+                <img src="images/IM2.jpeg">
+                <h4>Apple iphone SE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$506.58</p>
+            </div>
+            <div class="col-4">
+                <img src="images/IM3.jpeg">
+                <h4>Apple iphone 11 pro</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$1,095.33</p>
+            </div>
+            <div class="col-4">
+                <img src="images/IL2.jpeg">
+                <h4>Apple MacBook Air Core i3 10th Gen</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$1,273.20</p>
+            </div>
+            <div class="col-4">
+                <img src="images/IL4.jpeg">
+                <h4>Apple MacBook Pro With Touch Pad Core i5 10th Gen</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$2,394.69</p>
+            </div>
+            
+        </div>
+        
+    </div>
+            
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <img src="images/appstore.logo.png">
+                    <h3>Download Our App</h3>
+                    <p>Download App for ios mobile phone</p>
+                </div>
+                <div class="footer-col2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col3">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - RumanaThaiseen</p>
+        </div>
+    </div>
+    <script>
+        var MenuItems=document.getElementById("MenuItems");
+        MenuItems.style.maxHeight="0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px")
+                {
+                    MenuItems.style.maxHeight="200px";
+                }
+            else{
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+    </script>
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+        
+         SmallImg[0].onclick=function()
+          {
+             ProductImg.src=SmallImg[0].src;
+          }
+         SmallImg[1].onclick=function()
+          {
+             ProductImg.src=SmallImg[1].src;
+          }
+         SmallImg[2].onclick=function()
+          {
+             ProductImg.src=SmallImg[2].src;
+          }
+    
+    
+    
+    </script>
+</body>
+</html>
